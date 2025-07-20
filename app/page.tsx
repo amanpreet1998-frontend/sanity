@@ -17,7 +17,7 @@ export default async function HomePage() {
       {/* Render hero, about, etc */}
       <PageRenderer sections={pageData.sections} />
 
-      {/* Render latest blog posts */}
+      {/* Render blog posts */}
       <BlogList posts={blogPosts} />
     </main>
   )
