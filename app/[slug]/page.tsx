@@ -4,5 +4,5 @@ import PageRenderer from '@/components/PageRenderer'
 
 export default async function DynamicPage({ params }: { params: { slug: string } }) {
   const data = await client.fetch(pageWithSectionsQuery, { slug: params.slug })
-  return <PageRenderer sections={data?.sections || []} />
+  return (<PageRenderer sections={data?.sections || []} />)
 }
